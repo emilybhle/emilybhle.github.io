@@ -1,0 +1,73 @@
+body{
+  
+  background: #FDFDFB;
+}
+
+ul {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F6DB7B;
+  box-shadow: 0px 1px 10px #5E5E5E;
+}
+
+li {
+    display: inline-block;
+    text-align:center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #F4D35E;
+}
+    
+li a.active { 
+    background-color: #F4D35E;
+
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding:14px 14px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background color:#F4D35E}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+footer {font-family: 'Didact Gothic', sans-serif;
+    font-size: 12px;}
