@@ -1,5 +1,5 @@
-body{
-  
+body, html{
+  width: 100%;
   background: #FDFDFB;
 }
 
@@ -7,34 +7,35 @@ ul {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 16px;
   text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #F6DB7B;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F6DB7B;
   box-shadow: 0px 1px 10px #5E5E5E;
 }
 
 li {
-    display: inline-block;
-    text-align:center;
+  display: inline-block;
+  text-align:center;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 50px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #F4D35E;
+  background-color: #F4D35E;
+  text-decoration: none;
+  color: white;
 }
     
 li a.active { 
-    background-color: #F4D35E;
-
+  background-color: #F4D35E;
 }
 
 li a, .dropbtn {
@@ -80,4 +81,15 @@ div.business{font-family: 'Didact Gothic', sans-serif;
 footer {font-family: 'Didact Gothic', sans-serif;
     font-size: 12px;}
 
-  
+.container {
+  width: 900px;
+  margin: auto;
+}  
+
+.contact-img {
+  width: 100%;
+}
+
+nav {
+  padding: 8px;
+}
