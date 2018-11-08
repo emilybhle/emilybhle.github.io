@@ -81,11 +81,6 @@ h2 {font-family: 'Didact Gothic', sans-serif;
   color: #474747;
   margin-top:5px;
     margin-bottom:30px;}
-  
-div {font-family: 'Didact Gothic', sans-serif;
-    padding-top:5px;
-    padding-right:40px;
-  }
 
 footer {font-family: 'Didact Gothic', sans-serif;;
     font-size: 12px;}
@@ -97,4 +92,16 @@ footer {font-family: 'Didact Gothic', sans-serif;;
 
 nav {
   padding: 8px;
+}
+
+td {
+  width: 50%;
+}
+
+.video-words {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 600px;
+  padding-bottom: 20px;
 }
