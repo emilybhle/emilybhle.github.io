@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Lê</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, viewport-fit=cover">
+<link rel="icon" href="assets/images/logos/ele_favicon.svg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f939fa0585.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/stylesheet.css">
+<script>
+
+  function openOrClose(iconElement) {
+    if (iconElement.className == "fas fa-bars") {
+      iconElement.className = "fas fa-times";
+      document.getElementById("myNav").style.height = "100%";
+    }
+    else if (iconElement.className == "fas fa-times") {
+      iconElement.className = "fas fa-bars";
+      document.getElementById("myNav").style.height = "0%";
+    }
+    else {
+      console.log("ERROR");
+    }
+  }
+</script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container">
+      <table class="nav-table">
+        <tr>
+          <td class="navbar-logo">
+            <a href="index.html">
+              <img id="brand-logo" src="assets/images/logos/ele-01.svg" alt="">
+            </a>
+          </td>
+          <td class="navbar-links-mobile">
+            <i class="fas fa-bars" onclick="openOrClose(this)"></i>
+          </td>
+          <td class="navbar-links-desktop">
+            <a href="" class="nav-selected">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+            <a href="resume.pdf" target="_blank">RESUME</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+
+  <div id="myNav" class="overlay" style="opacity: 0.98; height: 0%; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); overflow-y: hidden; transition: 0.2s;">
+    <div style="height: 35%;"></div>
+    <table style="margin: auto; height: 30%; text-align: center;">
+      <tr>
+        <td>
+          <h1>Portfolio</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <p>Branding</p>
+              </td>
+              <td>
+                <p>|</p>
+              </td>
+              <td>
+                <p>Graphic Design</p>
+              </td>
+              <td>
+                <p>|</p>
+              </td>
+              <td>
+                <p>Doodles</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>About</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>Resume</h1>
+        </td>
+      </tr>
+    </table>
+    <div style="height: 35%;"></div>
+  </div>
+
+  <div id="under-nav-padding"></div>
+
+  <div class="container">
+
+    <!-- CODE GOES HERE -->
+    
+  </div>
+
+</body>
+</html>

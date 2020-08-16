@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Lê</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, viewport-fit=cover">
+<link rel="icon" href="assets/images/logos/ele_favicon.svg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f939fa0585.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/stylesheet.css">
+<script>
+
+  function openOrClose(iconElement) {
+    if (iconElement.className == "fas fa-bars") {
+      iconElement.className = "fas fa-times";
+      document.getElementById("myNav").style.height = "100%";
+    }
+    else if (iconElement.className == "fas fa-times") {
+      iconElement.className = "fas fa-bars";
+      document.getElementById("myNav").style.height = "0%";
+    }
+    else {
+      console.log("ERROR");
+    }
+  }
+</script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container" style="height: 100%;">
+      <div class="row" style="height: 100%;">
+        <div class="col-6 col-md-3">
+          <a href="index.html" style="height: 100%;">
+            <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
+          </a>
+        </div>
+        <div class="col navbar-links-mobile">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col navbar-links-desktop">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td><a href="index.html">PORTFOLIO</a>
+              <a href="about.html" class="nav-selected" style="padding-left: 2vw;">ABOUT</a>
+              <a href="EmilyLe_Resume.pdf" target="_blank" style="padding-left: 2vw;">RESUME</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myNav" class="overlay">
+    <table style="vertical-align: middle;">
+      <tr><td style="height: max(80px, 10vh);"></td></tr>
+      <tr>
+        <td>
+          <table style=" height: auto; margin: auto; min-height: 50%; text-align: center; vertical-align: middle;">
+            <tr>
+              <td><a href="index.html"><h1>Portfolio</h1></a><div class="splitter"></div></td>
+            </tr>
+            <tr>
+              <td>
+                <p><a href="projects/mrp.html">Master's Thesis</a></p>
+                <p><a href="projects/stargrove.html">Branding & Logo Ideation</a></p>
+                <p><a href="projects/posterdesign.html">Poster Design</a></p>
+                <p><a href="projects/productsandpackaging.html">Product & Package Design</a></p>
+                <p><a href="projects/mdmindustryday.html">Social Media Content Creation</a></p>
+                <p><a href="projects/ragecollective.html">Podcast Branding</a></p>
+                <p><a href="projects/doodledump.html">Doodle Dump</a></p>
+                <p><a href="projects/branchouttheatre.html">Community Outreach</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="about.html"><h1>About</h1></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="EmilyLe_Resume.pdf" target="_blank"><h1>Resume</h1></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="under-nav-padding"></div>
+
+  <div class="container body-container">
+
+    <div class="row">
+      <div class="col-md-6">
+        <table style="height: 100%; width: 100%;">
+          <tr>
+            <td>
+              <div class="image-fill" style="width: 100%; background-image: url('assets/images/me.jpg'); padding-top: 100%;"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table style="width: 100%; height: 100%;">
+          <tr>
+            <td>
+              <!-- <img src="assets/images/logos/fullnameorange.png" alt="Emily Le" class="" style="position: absolute; top: 0; left: 0; z-index: 1;"> -->
+              <div>
+                <h1 class="center-on-mobile" style="font-family: corporate-s, sans-serif; font-style: normal; font-weight: 700;">Emily Lê</h1>
+                <div class="splitter"></div>
+                <h2 class="center-on-mobile">Digital Design and Engagement</h2>
+                <p><br>Hello and welcome! My name is Emily Lê and I am a visual storyteller.<br><br></p>
+                <p>I am a proud alum of Colorado State University where I earned my BFA in Electronic Art and am a soon-to-be graduate of Ryerson University’s Master of Digital Media (MDM) program in Toronto. Through my undergraduate degree I was able to create the backbone of my technical skills ranging from graphic design to video production. During my time with the MDM program, I was able to really expand my technical skills and delve deeper into design thinking, conceptualizing an experience, and advanced technologies.<br><br></p>
+                <p>My strengths lie within visual design, guest engagement, and creative marketing. My passion and work heavily lie within the themed entertainment industry. The creativity that stems from an environment that thrives off imagination and immersive play is the driving force of my inspiration and many of my projects. It has been a gift over these past few years to learn more about this industry and just how expansive it really is. I have been lucky enough to hold various roles within this industry including being a Safari Driver in Disney’s Animal Kingdom to working as the Communications Coordinator for a small theatre in the heart of Toronto. Please take a look around my portfolio and feel free to contact me for more information.<br><br></p>  
+              </div>
+              <div class="row about-links">
+                <div class="col">
+                  <a href="EmilyLe_Resume.pdf" target="_blank">
+                    <i class="far fa-file"></i>
+                    <p>Resume</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="mailto:emily.bh.le@gmail.com">
+                    <i class="far fa-envelope"></i>
+                    <p>Email</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.instagram.com/emilybhle.art/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.linkedin.com/in/emilysayshi/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <p>LinkedIn</p>
+                  </a>
+                </div>
+              </div>
+              <p><br>Talk to me about:
+                <ul>
+                  <li>The best thing you ever ate</li>
+                  <li>Your favourite song to listen to in the car with the windows down</li>
+                  <li>Carly Rae Jepsen’s current reign as the Princess of Pop</li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="height: 10vh;"></div>
+
+</body>
+</html>
