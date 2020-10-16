@@ -249,11 +249,11 @@ table {
   padding: 30px;
 }
 
-/* PAP PAGE */
-.pap-text {
+/* PANDA PAGE */
+.panda-text {
   padding: 25px;
 }
-.pap-text>a {
+.panda-text>a {
   color: var(--primary-color);
 }
 
@@ -314,17 +314,24 @@ table {
     height: 70vh;
   }
   h1 {
-    font-size: calc((4vw + 4vh) * 0.8);
+    font-size: calc((4vw + 4vh) * 0.6);
   }
   h2 {
-    font-size: calc((4vw + 4vh) * 0.4);
+    font-size: calc((4vw + 4vh) * 0.24);
   }
   h3 {
-    font-size: calc((4vw + 4vh) * 0.3);
+    font-size: calc((4vw + 4vh) * 0.25);
   }
   p {
-    font-size: calc((4vw + 4vh) * 0.15);
-  }  
+    font-size: calc((4vw + 4vh) * 0.13);
+  } 
+  .not-so-wide {
+    width: 50%;
+    margin: auto;
+  }
+  .panda-text {
+    padding: 100px;
+  }
 }
 
 /* MEDIA QUERY FOR ANYTHING LARGER THAN 1200px */
