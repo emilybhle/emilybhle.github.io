@@ -171,6 +171,10 @@ table {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(255,255,255,0.5); /* Black w/ opacity */
 }
+.mobile-nav-splitter {
+  width: 70%;
+  margin: auto;
+}
 
 /* INDEX PAGE */
 .index-single-table {
@@ -213,6 +217,15 @@ table {
   color: var(--primary-color);
   text-align: center;
 }
+.poster-shadow {
+  box-shadow: 0px 10px 10px 5px #888888; 
+  padding: 0px;
+  margin: 30px 0px;
+}
+.carousel-indicators {
+  background-color: #555555;
+  border-radius: 10px;
+}
 
 /* MRP PAGE */
 .mrp-hero-image {
@@ -229,11 +242,9 @@ table {
   color: var(--primary-color);
 }
 
-/* POSTER PAGE */
-.poster-shadow {
-  box-shadow: 0px 10px 10px 5px #888888; 
-  padding: 0px;
-  margin: 30px 0px;
+/* CRADLE PAGE */
+.cradle-text {
+  padding: 25px;
 }
 
 /* MDM INDUSTRY DAY PAGE */
@@ -356,5 +367,6 @@ table {
   }
   .index-single-table:hover {
     opacity: 1;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
   }
 }

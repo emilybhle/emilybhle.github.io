@@ -50,18 +50,18 @@
         <td>
           <table style=" height: auto; margin: auto; min-height: 50%; text-align: center; vertical-align: middle;">
             <tr>
-              <td><a href="../index.html"><h1>Portfolio</h1></a><div class="splitter"></div></td>
+              <td><a href="../index.html"><h1>Portfolio</h1></a><div class="splitter mobile-nav-splitter"></div></td>
             </tr>
             <tr>
               <td>
                 <p><a href="mrp.html">Master's Thesis</a></p>
-                <p><a href="stargrove.html" class="nav-selected">Branding & Logo Ideation</a></p>
-                <p><a href="posterdesign.html">Poster Design</a></p>
-                <p><a href="productsandpackaging.html">Product & Package Design</a></p>
-                <p><a href="mdmindustryday.html">Social Media Content Creation</a></p>
-                <p><a href="ragecollective.html">Podcast Branding</a></p>
+                <p><a href="stargrove.html">Stargrove</a></p>
+                <p><a href="panda.html">PANDA</a></p>
+                <p><a href="cradle.html">Cradle</a></p>
+                <p><a href="mdmindustryday.html">Neo Normal 2020</a></p>
+                <p><a href="ragecollective.html">The Rage Collective</a></p>
                 <p><a href="doodledump.html">Doodle Dump</a></p>
-                <p><a href="branchouttheatre.html">Community Outreach</a></p>
+                <p><a href="branchouttheatre.html">Branch Out Theatre</a></p>
               </td>
             </tr>
             <tr>
@@ -85,7 +85,7 @@
       <table style="text-align: center;">
         <tr>
           <td>
-            <a href="mrp.html">Master's Thesis</a> | <a href="stargrove.html" class="nav-selected">Branding & Logo Ideation</a> | <a href="posterdesign.html">Poster Design</a> | <a href="productsandpackaging.html">Product & Package Design</a> | <a href="mdmindustryday.html">Social Media Content Creation</a> | <a href="ragecollective.html">Podcast Branding</a> | <a href="doodledump.html">Doodle Dump</a> | <a href="branchouttheatre.html">Community Outreach</a>
+            <a href="mrp.html">Master's Thesis</a> | <a href="stargrove.html">Stargrove</a> | <a href="panda.html" class="nav-selected">PANDA</a> | <a href="cradle.html">Cradle</a> | <a href="mdmindustryday.html">Neo Normal 2020</a> | <a href="ragecollective.html">The Rage Collective</a> | <a href="doodledump.html">Doodle Dump</a> | <a href="branchouttheatre.html">Branch Out Theatre</a>
           </td>
         </tr>
       </table>
@@ -96,19 +96,27 @@
 
   <div class="container body-container">
     
-    <img src="../assets/images/Panda/pandalogo-01.png" alt="" style="display: block;" class="not-so-wide">
-    <h1 style="text-align: center;">PANDA - Skincare Brand (concept)</h1>
-    <div style="height: 50px;"></div>
-    <h2>
-      <b>Skills:</b> Brand Development, Web Design
-      <br>
-      <b>Programs:</b> Adobe Illustrator, Photoshop, and XD
-    </h2>
-    <!-- <div class="guidelines-button">
-      <a class="btn btn-primary btn-lg" href="StargroveBrandGuidelines.pdf"><p>VIEW FINAL BRAND GUIDELINES</p></a>
-    </div> -->
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="../assets/images/Panda/pandalogo-01.png" alt="" style="display: block;" onclick="modalPop(this)">
+      </div>
+      <div class="col-sm-6">
+        <table>
+          <tr>
+            <td>
+              <h1>PANDA - Skincare Brand (concept)</h1>
+              <div style="height: 50px;"></div>
+              <h2>
+                <b>Skills:</b> Brand Development, Web Design
+                <br>
+                <b>Programs:</b> Adobe Illustrator, Photoshop, and XD
+              </h2>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-    <div style="height: 50px;"></div>
     <div class="splitter" style="margin: 20px;"></div>
     <p class="panda-text"> 
       PANDA is a skincare brand I mocked up for the #DailyLogoChallenge. The prompt was to create a “panda logo”. Panda’s are one of my favourite animals in the world so I definitely was excited to come up with something, although there already is a very famous panda logo in existence. I wanted to challenge myself and try some loose line art for the icon of the brand. I really enjoy the modern, clean aspect of this icon, paired with a fashionable font and am extremely happy with how it came out.
@@ -128,17 +136,31 @@
         </table>
       </div>
       <div class="col-sm-4">
-        <img src="../assets/images/Panda/panda.JPG" alt="">
+        <img src="../assets/images/Panda/panda.JPG" alt="" onclick="modalPop(this)">
       </div>
     </div>
 
     <div class="row" style="margin: 50px 0px;">
-      <img src="../assets/images/Panda/WebsiteMockup_full.png" alt="">
+      <div class="col">
+        <img src="../assets/images/Panda/WebsiteMockup_full.png" alt="" onclick="modalPop(this)">
+      </div>
+    </div>
+
+    <div class="row" style="margin: 50px 0px;">
+      <div class="col">
+        <video src="../assets/images/Panda/websitemockup_2.mp4" class="not-so-wide" style="display: block;" autoplay controls loop></video>
+        <figcaption>Mock site in motion</figcaption>
+      </div>
     </div>
 
     <div class="row">
-      <img src="../assets/images/Panda/brandguidelines.png" alt="" class="not-so-wide" style="border-radius: 5px; box-shadow: 0px 10px 10px 5px #888888; padding: 0;">
+      <div class="col">
+        <img src="../assets/images/Panda/brandguidelines.png" alt="" class="not-so-wide" style="display: block; border-radius: 5px; box-shadow: 0px 10px 10px 5px #888888; padding: 0;" onclick="modalPop(this)">
+        <figcaption>Brand Guidelines</figcaption>
+      </div>
     </div>
+
+  </div>
 
   <!-- Modal -->
   <div class="modal" id="imageModal" onclick="closeModal(this)">
