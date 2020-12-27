@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Lê</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, viewport-fit=cover">
+<link rel="icon" href="assets/images/logos/ele_favicon.svg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f939fa0585.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/stylesheet.css">
+<script>
+
+  function openOrClose(iconElement) {
+    if (iconElement.className == "fas fa-bars") {
+      iconElement.className = "fas fa-times";
+      document.getElementById("myNav").style.height = "100%";
+    }
+    else if (iconElement.className == "fas fa-times") {
+      iconElement.className = "fas fa-bars";
+      document.getElementById("myNav").style.height = "0%";
+    }
+    else {
+      console.log("ERROR");
+    }
+  }
+
+</script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container" style="height: 100%;">
+      <div class="row" style="height: 100%;">
+        <div class="col-6 col-md-3">
+          <a href="index.html" style="height: 100%;">
+            <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
+          </a>
+        </div>
+        <div class="col navbar-links-mobile">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col navbar-links-desktop">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td><a href="index.html" class="nav-selected">PORTFOLIO</a>
+              <a href="about.html" style="padding-left: 2vw;">ABOUT</a>
+              <a href="EmilyLe_Resume.pdf" target="_blank" style="padding-left: 2vw;">RESUME</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myNav" class="overlay">
+    <table style="vertical-align: middle;">
+      <tr><td style="height: max(80px, 10vh);"></td></tr>
+      <tr>
+        <td>
+          <table style=" height: auto; margin: auto; min-height: 50%; text-align: center; vertical-align: middle;">
+            <tr>
+              <td><a href="index.html"><h1>Portfolio</h1></a><div class="splitter mobile-nav-splitter"></div></td>
+            </tr>
+            <tr>
+              <td>
+                <p><a href="projects/mrp.html">Master's Thesis</a></p>
+                <p><a href="projects/stargrove.html">Stargrove</a></p>
+                <p><a href="projects/panda.html">PANDA</a></p>
+                <p><a href="projects/cradle.html">Cradle</a></p>
+                <p><a href="projects/mdmindustryday.html">Neo Normal 2020</a></p>
+                <p><a href="projects/ragecollective.html">The Rage Collective</a></p>
+                <p><a href="projects/doodledump.html">Doodle Dump</a></p>
+                <p><a href="projects/branchouttheatre.html">Branch Out Theatre</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="about.html"><h1>About</h1></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="EmilyLe_Resume.pdf" target="_blank"><h1>Resume</h1></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="under-nav-padding"></div>
+
+  <div class="container body-container">
+    <div class="row">
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/MRP/heroimage-01.png');">
+            <a href="projects/mrp.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Master's Thesis</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/StarGrove/HeroThumbnail.png');">
+            <a href="projects/stargrove.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Stargrove</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/Panda/panda.JPG');">
+            <a href="projects/panda.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">PANDA</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/Cradle/cradlelogo.png');">
+            <a href="projects/cradle.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Cradle</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/MDMIndustryDay/instagram/EMILYLE-01.jpg');">
+            <a href="projects/mdmindustryday.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Neo Normal 2020</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/RageCollective/TRClogo.png');">
+            <a href="projects/ragecollective.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">The Rage Collective</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/DoodleDump/wsig.jpg');">
+            <a href="projects/doodledump.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Doodle Dump</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6" style="padding: 0;">
+        <div style="padding:5px;">
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/BranchOutTheatre/BOTnewsletter.jpg');">
+            <a href="projects/branchouttheatre.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">Branch Out Theatre</h1>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

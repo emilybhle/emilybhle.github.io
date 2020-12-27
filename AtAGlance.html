@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Lê</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, viewport-fit=cover">
+<link rel="icon" href="assets/images/logos/ele_favicon.svg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f939fa0585.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/stylesheet.css">
+<script src="assets/main.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9J7QYG2L96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9J7QYG2L96');
+</script>
+</head>
+
+<body>
+
+  <!-- <nav>
+    <div class="container" style="height: 100%;">
+      <div class="row" style="height: 100%;">
+        <div class="col-6 col-md-3">
+          <a href="index.html" style="height: 100%;">
+            <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
+          </a>
+        </div>
+        <div class="col navbar-links-mobile">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col navbar-links-desktop" style="text-align: right;">
+          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
+            <tr>
+              <td>
+                <ul style="list-style-type: none; margin: 0;">
+                  <li style="display: inline-block; padding-left: 20px;"><a href="#home">Home</a></li>
+                  <li class="projects-hover" style="display: inline-block; padding-left: 20px;">
+                    <a href="#port">Portfolio</a>
+                    <nav class="projects-nav">
+                      <div class="container">
+                        <table style="text-align: center;">
+                          <tr>
+                            <td><a href="mrp.html">Master's Thesis</a></td>
+                            <td><a href="stargrove.html">Stargrove</a></td>
+                            <td><a href="panda.html">PANDA</a></td>
+                            <td><a href="cradle.html">Cradle</a></td>
+                            <td><a href="mdmindustryday.html">Neo Normal 2020</a></td>
+                            <td><a href="ragecollective.html">The Rage Collective</a></td>
+                            <td><a href="doodledump.html">Doodle Dump</a></td>
+                            <td><a href="branchouttheatre.html">Branch Out Theatre</a></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </nav>
+                  </li>
+                  <li style="display: inline-block; padding-left: 20px;"><a href="#home">Home</a></li>
+                  <li style="display: inline-block; padding-left: 20px;"><a href="#home">Home</a></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav>
+    <div class="container">
+      <a href="index.html" style="height: 100%;">
+        <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
+      </a>
+      <div class="navbar-links-mobile" style="float: right;">
+        <table style="height: 100%; width: 100%; vertical-align: middle;">
+          <tr>
+            <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
+          </tr>
+        </table>
+      </div>
+      <div class="navbar-links-desktop" style="float: right;">
+        <table>
+          <tr>
+            <td><a href="index.html" class="nav-selected">AT A GLANCE</a></td>
+            <td onmouseover="showSubMenu()"><a href="projects.html">PORTFOLIO <i class="fa fa-caret-down"></i></a></td>
+            <td><a href="about.html">ABOUT</a></td>
+            <td><a href="EmilyLe_Resume.pdf"target="_blank">RESUME</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="projects-nav" class="projects-nav" onmouseleave="hideSubMenu()">
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td><a href="projects/mrp.html">Master's Thesis</a> | <a href="projects/stargrove.html">Stargrove</a> | <a href="projects/panda.html">PANDA</a> | <a href="projects/SuperU.html">Super U: Rah Rah Rollercoaster</a> | <a href="projects/RJsFoodRocks.html">RJ's Food Rocks</a> | <a href="projects/mdmindustryday.html">Neo Normal 2020</a> | <a href="projects/cradle.html">Cradle</a> | <a href="projects/ragecollective.html">The Rage Collective</a> | <a href="projects/doodledump.html">Doodle Dump</a> | <a href="projects/branchouttheatre.html">Branch Out Theatre</a></td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+
+  <div id="myNav" class="overlay">
+    <table style="vertical-align: middle;">
+      <tr><td style="height: max(80px, 10vh);"></td></tr>
+      <tr>
+        <td>
+          <table style=" height: auto; margin: auto; min-height: 50%; text-align: center; vertical-align: middle;">
+            <tr>
+              <td><a href="index.html"><h1>Portfolio</h1></a><div class="splitter mobile-nav-splitter"></div></td>
+            </tr>
+            <tr>
+              <td>
+                <p><a href="projects/mrp.html">Master's Thesis</a></p>
+                <p><a href="projects/stargrove.html">Stargrove</a></p>
+                <p><a href="projects/panda.html">PANDA</a></p>
+                <p><a href="projects/cradle.html">Cradle</a></p>
+                <p><a href="projects/mdmindustryday.html">Neo Normal 2020</a></p>
+                <p><a href="projects/ragecollective.html">The Rage Collective</a></p>
+                <p><a href="projects/doodledump.html">Doodle Dump</a></p>
+                <p><a href="projects/branchouttheatre.html">Branch Out Theatre</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="about.html"><h1>About</h1></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="EmilyLe_Resume.pdf" target="_blank"><h1>Resume</h1></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="under-nav-padding"></div>
+
+  <div class="container body-container">
+    <div class="row">
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/1_mockup_yellow.png" alt="" onclick="modalPopGlance(this, 'A comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/airharvest-01.png" alt="" onclick="modalPopGlance(this, 'B comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/kittAIlogo.jpg" alt="" onclick="modalPopGlance(this, 'C comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/panda.JPG" alt="" onclick="modalPopGlance(this, 'D comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/CherrySwatch.png" alt="" onclick="modalPopGlance(this, 'E comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/cradleappsquare-01.png" alt="" onclick="modalPopGlance(this, 'F comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/IGpost-02.png" alt="" onclick="modalPopGlance(this, '<a href=&quot;projects/RJsFoodRocks.html&quot;>G</a> comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/stargrovelogo-01.png" alt="" onclick="modalPopGlance(this, 'H comment')">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" style="padding: 0;">
+        <img src="/assets/images/AtAGlance/signs-01.png" alt="" onclick="modalPopGlance(this, 'I comment')">
+      </div>      
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="imageModal" onclick="closeModal(this)">
+    <table style="height: 100%; width: 100%; vertical-align: middle;">
+      <tr>
+        <td>
+          <img id="modal-content">
+          <figcaption id="modalFigCaption" style="font-size: 24px; padding-top: 5px; font-weight: 300; color: black;"></figcaption>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

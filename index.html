@@ -10,52 +10,51 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/f939fa0585.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="assets/stylesheet.css">
+<script src="assets/main.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9J7QYG2L96"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  function openOrClose(iconElement) {
-    if (iconElement.className == "fas fa-bars") {
-      iconElement.className = "fas fa-times";
-      document.getElementById("myNav").style.height = "100%";
-    }
-    else if (iconElement.className == "fas fa-times") {
-      iconElement.className = "fas fa-bars";
-      document.getElementById("myNav").style.height = "0%";
-    }
-    else {
-      console.log("ERROR");
-    }
-  }
-
+  gtag('config', 'G-9J7QYG2L96');
 </script>
 </head>
 
 <body>
 
   <nav>
-    <div class="container" style="height: 100%;">
-      <div class="row" style="height: 100%;">
-        <div class="col-6 col-md-3">
-          <a href="index.html" style="height: 100%;">
-            <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
-          </a>
-        </div>
-        <div class="col navbar-links-mobile">
-          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
-            <tr>
-              <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
-            </tr>
-          </table>
-        </div>
-        <div class="col navbar-links-desktop">
-          <table style="height: 100%; width: 100%; text-align: right; vertical-align: middle;">
-            <tr>
-              <td><a href="index.html" class="nav-selected">PORTFOLIO</a>
-              <a href="about.html" style="padding-left: 2vw;">ABOUT</a>
-              <a href="EmilyLe_Resume.pdf" target="_blank" style="padding-left: 2vw;">RESUME</a></td>
-            </tr>
-          </table>
-        </div>
+    <div class="container">
+      <a href="index.html" style="height: 100%;">
+        <img id="brand-logo1" src="assets/images/logos/ele-01.svg" alt="" style="height: 100%;">
+      </a>
+      <div class="navbar-links-mobile" style="float: right;">
+        <table style="height: 100%; width: 100%; vertical-align: middle;">
+          <tr>
+            <td><i class="fas fa-bars" onclick="openOrClose(this)"></i></td>
+          </tr>
+        </table>
       </div>
+      <div class="navbar-links-desktop" style="float: right;">
+        <table>
+          <tr>
+            <td onmouseover="showSubMenu()"><a href="index.html" class="nav-selected">PORTFOLIO <i class="fa fa-caret-down"></i></a></td>
+            <td><a href="about.html">ABOUT</a></td>
+            <td><a href="EmilyLe_Resume.pdf"target="_blank">RESUME</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="projects-nav" class="projects-nav" onmouseleave="hideSubMenu()">
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td><a href="projects/mrp.html">Master's Thesis</a> | <a href="projects/stargrove.html">Stargrove</a> | <a href="projects/panda.html">PANDA</a> | <a href="projects/SuperU.html">Super U: Rah Rah Rollercoaster</a> | <a href="projects/RJsFoodRocks.html">RJ's Food Rocks</a> | <a href="projects/mdmindustryday.html">Neo Normal 2020</a> | <a href="projects/cradle.html">Cradle</a> | <a href="projects/ragecollective.html">The Rage Collective</a> | <a href="projects/doodledump.html">Doodle Dump</a> | <a href="projects/branchouttheatre.html">Branch Out Theatre</a></td>
+        </tr>
+      </table>
     </div>
   </nav>
 
@@ -98,48 +97,48 @@
 
   <div id="under-nav-padding"></div>
 
-  <div class="container body-container">
-    <div class="row">
+    <div class="row" style="margin: 0;">
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/MRP/heroimage-01.png');">
             <a href="projects/mrp.html">
               <table class="index-single-table">
                 <tr>
                   <td>
                     <h1 class="index-header-text">Master's Thesis</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Project Management, Arduino Development (Interactive Design), Narrative Storytelling</h2>
                   </td>
                 </tr>
               </table>
             </a>
           </div>
-        </div>
       </div>
 
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/StarGrove/HeroThumbnail.png');">
             <a href="projects/stargrove.html">
               <table class="index-single-table">
                 <tr>
                   <td>
                     <h1 class="index-header-text">Stargrove</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Brand Development, Logo Design, Product & Package Design, Poster Design</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator, and Photoshop, InDesign, and Keynote</h3>
                   </td>
                 </tr>
               </table>
             </a>
           </div>
-        </div>
       </div>
 
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
+        <div>
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/Panda/panda.JPG');">
             <a href="projects/panda.html">
               <table class="index-single-table">
                 <tr>
                   <td>
                     <h1 class="index-header-text">PANDA</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Brand Development, Web Design</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator, Photoshop, and XD</h3>
                   </td>
                 </tr>
               </table>
@@ -149,13 +148,15 @@
       </div>
 
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
-          <div class="image-fill index-image-fill" style="background-image: url('assets/images/Cradle/cradlelogo.png');">
-            <a href="projects/cradle.html">
+        <div>
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/superu/Emily Render (1).jpg');">
+            <a href="projects/SuperU.html">
               <table class="index-single-table">
                 <tr>
                   <td>
-                    <h1 class="index-header-text">Cradle</h1>
+                    <h1 class="index-header-text">Super U: Rah Rah Rollercoaster</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Themed Entertainment Signage</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator and Photoshop</h3>
                   </td>
                 </tr>
               </table>
@@ -165,13 +166,33 @@
       </div>
 
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
+        <div>
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/RJsFoodRocks/YouTubeBanner_FULLsize-01.jpg');">
+            <a href="projects/RJsFoodRocks.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">RJ's Food Rocks</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Brand Development, Logo Design, Icon Creation</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator</h3>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div>
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/MDMIndustryDay/instagram/EMILYLE-01.jpg');">
             <a href="projects/mdmindustryday.html">
               <table class="index-single-table">
                 <tr>
                   <td>
                     <h1 class="index-header-text">Neo Normal 2020</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Graphic Design, Social Media Content Creation, Copy Editing, Wireframing</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator</h3>
                   </td>
                 </tr>
               </table>
@@ -181,13 +202,15 @@
       </div>
     
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
-          <div class="image-fill index-image-fill" style="background-image: url('assets/images/RageCollective/TRClogo.png');">
-            <a href="projects/ragecollective.html">
+        <div>
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/Cradle/cradlelogo.png');">
+            <a href="projects/cradle.html">
               <table class="index-single-table">
                 <tr>
                   <td>
-                    <h1 class="index-header-text">The Rage Collective</h1>
+                    <h1 class="index-header-text">Cradle</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Brand Development, UI/UX design, Wireframes</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator, Photoshop, and XD</h3>
                   </td>
                 </tr>
               </table>
@@ -197,7 +220,25 @@
       </div>
 
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
+        <div>
+          <div class="image-fill index-image-fill" style="background-image: url('assets/images/RageCollective/TRClogo.png');">
+            <a href="projects/ragecollective.html">
+              <table class="index-single-table">
+                <tr>
+                  <td>
+                    <h1 class="index-header-text">The Rage Collective</h1>
+                    <h2 class="index-header-text"><b>Skills:</b> Brand Guidelines and Visual Development</h2>
+                    <h3 class="index-header-text"><b>Programs:</b> Adobe Illustrator and Photoshop</h3>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding: 0;">
+        <div>
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/DoodleDump/wsig.jpg');">
             <a href="projects/doodledump.html">
               <table class="index-single-table">
@@ -213,13 +254,15 @@
       </div>
   
       <div class="col-md-6" style="padding: 0;">
-        <div style="padding:5px;">
+        <div>
           <div class="image-fill index-image-fill" style="background-image: url('assets/images/BranchOutTheatre/BOTnewsletter.jpg');">
             <a href="projects/branchouttheatre.html">
               <table class="index-single-table">
                 <tr>
                   <td>
                     <h1 class="index-header-text">Branch Out Theatre</h1>
+                    <h2 class="index-header-text"><b>Role:</b> Communications Coordinator</h2>
+                    <h3 class="index-header-text"><b>Skills:</b> Adobe Illustrator and Photoshop, Social Media Management and Marketing</h3>
                   </td>
                 </tr>
               </table>
@@ -228,7 +271,6 @@
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 </html>
