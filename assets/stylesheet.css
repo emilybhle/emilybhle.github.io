@@ -352,7 +352,7 @@ table {
     font-size: calc((4vw + 4vh) * 0.25);
   }
   p {
-    font-size: calc((4vw + 4vh) * 0.13);
+    font-size: calc((4vw + 4vh) * 0.14);
   } 
   .not-so-wide {
     width: 50%;
@@ -380,7 +380,7 @@ table {
     padding-right: 50px;
   }
   .index-header-text {
-    padding-left: 100px;
+    padding-left: 50px;
   }
 }
 
