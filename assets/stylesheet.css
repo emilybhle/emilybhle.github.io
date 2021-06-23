@@ -210,6 +210,9 @@ table {
   text-align: center;
   padding: 20px 0px;
 }
+.desktop-category-text {
+  display: none;
+}
 
 /* ABOUT PAGE */
 .about-links {
@@ -368,7 +371,9 @@ table {
   .index-header-text {
     padding-left: 20px;
   }
-
+  .desktop-category-text {
+    display: block;
+  }
 }
 
 /* MEDIA QUERY FOR ANYTHING LARGER THAN 1200px */
